@@ -1,0 +1,17 @@
+# macOS
+.DS_Store
+._*
+
+# 편집기
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# 로그/임시
+*.log
+*.tmp
+
+# 노드 모듈 (혹시 나중에 도구 추가 대비)
+node_modules/
