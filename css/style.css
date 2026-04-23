@@ -797,6 +797,32 @@ main {
 }
 .share-url:hover { background: #fff8e1; }
 
+.share-warning {
+  display: flex;
+  gap: 12px;
+  align-items: flex-start;
+  margin-top: 14px;
+  padding: 16px 18px;
+  background: #fff9e0;
+  border: 3px solid #ffc875;
+  border-radius: 14px;
+  font-size: 15px;
+  line-height: 1.65;
+  color: #6b4c00;
+}
+.share-warning .warn-icon {
+  font-size: 26px;
+  line-height: 1;
+  flex-shrink: 0;
+}
+.share-warning strong { color: #a04a00; }
+.share-warning .warn-note {
+  display: inline-block;
+  margin-top: 8px;
+  color: #7a6b2e;
+  font-size: 14px;
+}
+
 /* ========== 애니메이션 ========== */
 @keyframes bounceIn {
   0% { transform: scale(0.7) translateY(20px); opacity: 0; }
