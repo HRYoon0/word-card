@@ -683,15 +683,23 @@ main {
 .link-btn:hover { background: rgba(126, 207, 255, 0.2); }
 .sheet-help {
   background: white;
-  padding: 18px 20px;
+  padding: 22px;
   border-radius: 16px;
   margin-bottom: 14px;
   font-size: 16px;
   line-height: 1.7;
   border: 2px solid #d4ecff;
 }
-.sheet-help ol { margin-left: 22px; }
-.sheet-help li { margin-bottom: 8px; }
+.sheet-help ol {
+  margin-left: 22px;
+  counter-reset: step 1;       /* 1단계는 버튼이 차지하므로 2부터 시작 */
+}
+.sheet-help ol > li { margin-bottom: 10px; }
+.sheet-help ol > li::marker { color: var(--primary); font-size: 18px; }
+.sheet-help a {
+  color: var(--secondary-dark);
+  text-decoration: underline;
+}
 .sheet-help code {
   background: #fff8e1;
   padding: 4px 10px;
@@ -699,6 +707,30 @@ main {
   font-size: 14px;
   font-family: 'Consolas', monospace;
   color: var(--text);
+}
+/* 템플릿 다운로드 - 첫 단계 강조 버튼 */
+.template-btn {
+  display: block;
+  width: 100%;
+  padding: 18px 24px;
+  margin-bottom: 20px;
+  background: linear-gradient(135deg, #ffaad4, #ff7eb3);
+  color: white;
+  border: 3px solid white;
+  border-radius: 16px;
+  font-family: inherit;
+  font-size: 20px;
+  cursor: pointer;
+  box-shadow: 0 6px 0 var(--primary-dark);
+  transition: transform 0.1s, box-shadow 0.1s;
+}
+.template-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 0 var(--primary-dark);
+}
+.template-btn:active {
+  transform: translateY(3px);
+  box-shadow: 0 3px 0 var(--primary-dark);
 }
 .sheet-input-row {
   display: flex;

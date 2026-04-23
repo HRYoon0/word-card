@@ -116,17 +116,20 @@
           <button id="toggleSheetHelpBtn" class="link-btn">사용 방법 ▼</button>
         </div>
         <div id="sheetHelp" class="sheet-help" hidden>
+          <button id="downloadTemplateBtn" class="template-btn">📋 1단계: 템플릿 CSV 다운로드</button>
           <ol>
-            <li>구글 시트를 열고 첫 줄에 제목을 쓰세요:
-              <code>Lesson | Emoji | English | Korean</code>
-              (이모지 열은 생략 가능)</li>
-            <li>단원명·이모지·영어·한글을 한 줄에 하나씩 입력</li>
+            <li><strong>위 버튼</strong>을 눌러 샘플 CSV 파일을 다운로드하세요.</li>
+            <li><a href="https://sheets.new" target="_blank">sheets.new</a>에 접속해 빈 구글 시트를 만듭니다.</li>
+            <li>구글 시트 상단 메뉴: <strong>파일 → 가져오기 → 업로드</strong> → 방금 받은 CSV 선택<br>
+              → 가져오기 위치: <strong>"현재 시트 교체"</strong> → <strong>데이터 가져오기</strong></li>
+            <li>시트에서 단어를 자유롭게 수정/추가하세요.<br>
+              같은 <code>Lesson</code> 이름을 쓰면 자동으로 한 단원으로 묶입니다.</li>
             <li>상단 메뉴: <strong>파일 → 공유 → 웹에 게시</strong></li>
-            <li>형식: <strong>쉼표로 구분된 값(.csv)</strong> 선택 → <strong>게시</strong></li>
-            <li>생성된 URL을 복사해 아래 입력창에 붙여넣기</li>
+            <li>형식 <strong>쉼표로 구분된 값(.csv)</strong> 선택 → <strong>게시</strong> 버튼 클릭<br>
+              → 경고창 나오면 <strong>확인</strong></li>
+            <li>생성된 URL을 복사해 아래 입력창에 붙여넣고 <strong>🔄 불러오기</strong> 클릭</li>
           </ol>
-          <p class="hint">💡 기존 단어는 모두 시트 내용으로 교체됩니다. 먼저 "내보내기"로 백업하세요.</p>
-          <button id="downloadTemplateBtn" class="link-btn">📋 템플릿 CSV 받기 (구글 시트에 업로드용)</button>
+          <p class="hint">💡 기존 단어는 모두 시트 내용으로 교체돼요. 필요하면 먼저 아래 "📤 내보내기"로 백업하세요.</p>
         </div>
         <div class="sheet-input-row">
           <input id="sheetUrl" type="text"
